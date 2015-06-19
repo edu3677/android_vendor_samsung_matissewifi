@@ -15,9 +15,7 @@
 # Pick up overlay for features that depend on non-open-source files
 
 PRODUCT_PACKAGES += \
-    com.qualcomm.location \
-    libHevcSwDecoder \
-    TimeService
+    libHevcSwDecoder 
 
 $(call inherit-product, vendor/samsung/matissewifi/matissewifi-vendor-blobs.mk)
 

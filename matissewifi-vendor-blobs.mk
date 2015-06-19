@@ -228,7 +228,7 @@ PRODUCT_COPY_FILES += \
 
 # NFC Firmware
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so
+  t  $(LOCAL_PATH)/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so
 
 # Perf
 PRODUCT_COPY_FILES += \
@@ -356,3 +356,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/libmmwfdinterface.so:system/vendor/lib/libmmwfdinterface.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libmmwfdsinkinterface.so:system/vendor/lib/libmmwfdsinkinterface.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libmmwfdsrcinterface.so:system/vendor/lib/libmmwfdsrcinterface.so 
+
+#APP
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/app/TimeService/TimeService.apk:system/app/TimeService/TimeService.apk \
+    $(LOCAL_PATH)/proprietary/app/com.qualcomm.location/com.qualcomm.location.apk:system/app/com.qualcomm.location/com.qualcomm.location.apk \
+    $(LOCAL_PATH)/proprietary/app/OpenCamera/OpenCamera.apk:system/app/OpenCamera/OpenCamera.apk
+
